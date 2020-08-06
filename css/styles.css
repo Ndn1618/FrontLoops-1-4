@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+       url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+       url("../fonts/roboto-v20-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+       url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  display: flex;
+  height: 100vh;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to bottom, 
+    #c3def5, 
+    #7a95af);
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7296d3;
+  padding: 15px 15px 15px 25px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.head h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.head a {
+  width: 24px;
+  height: 24px;
+  opacity: 0.4;
+}
+.head a:hover {
+  opacity: 1;
+}
+.head h3::before {
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -15px;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.chats {
+  background-color: #fff;
+  padding: 0 20px;
+}
+.chats h4 {
+  color: #bdbdbd;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.today-hr::before,
+.today-hr::after {
+  content: "";
+  height: 1px;
+  width: 190px;
+  background-color: #bdbdbd;
+  position: absolute;
+  margin-top: 10px;
+}
+.today-hr::before {
+  margin-left: -200px;
+}
+.today-hr::after {
+  margin-left: 9px;
+}
+.messages {
+  text-align: left;
+}
+.odd span {
+  margin: 16px 235px 0 0;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 14px;
+}
+.even span {
+  margin: 5px 0 0 420px;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 14px;
+}
+.odd p,
+.even p,
+.blocked p {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.odd p {
+  margin: 5px 80px 16px 0;
+  background-color: #d1dde7;
+}
+.even p {
+  margin: 5px 0 16px 80px;
+  background-color: #f6f6f6;
+}
+.blocked p {
+  background-color: #f6c4c2;
+  margin: 0 0 16px 220px;
+  padding-right: 13px;
+}
+.messages form {
+  display: flex;
+  padding-top: 13px;
+  border-top: 1px solid #bdbdbd;
+}
+.messages input {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+  padding: 6px 3px 3px 6px;
+  border: transparent;
+  outline: none;
+}
+.messages button {
+  background-color: transparent;
+  border: none;
+  padding: 6px 16px 6px 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #7296d3;
+  font-weight: 700;
+  letter-spacing: 1px;
+  outline: none;
+}
